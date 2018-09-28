@@ -1,0 +1,373 @@
+﻿.fx-curr__inner
+	padding 30px 30px 0
+	justify-content space-between
+	@media screen and (max-width: 1560px)
+		padding 25px 25px 0
+	@media screen and (max-width: 1280px)
+		padding 15px 15px 0
+	@media screen and (max-width: 576px)
+		padding 20px 5px 0
+
+.fx-curr__item
+	border 5px solid #000
+	@media screen and (max-width: 1560px)
+		margin-bottom 20px
+	@media screen and (max-width: 1280px)
+		margin-bottom 20px
+	@media screen and (max-width: 992px)
+		border 3px solid #000
+
+.fx-curr__bitcoin
+	order 1
+	width 31%
+	height 870px
+	background  #3d97ff url(../img/bitcoin_bg.jpg) 50% 50% no-repeat
+	background-size cover
+	padding-bottom 90px
+	&:before
+		content ''
+		display block
+		width 55%
+		height 316px
+		position absolute
+		top 3%
+		right 3%
+		background url(../img/coin_bitcoin.png) no-repeat
+		background-size contain
+	@media screen and (max-width: 1800px)
+		padding-bottom 65px
+	@media screen and (max-width: 1680px)
+		padding-bottom 50px
+	@media screen and (max-width: 1560px)
+		padding-bottom 80px
+	@media screen and (max-width: 1400px)
+		padding-bottom 55px
+	@media screen and (max-width: 1300px)
+		padding-right 5px
+	@media screen and (max-width: 1280px)
+		padding-bottom 65px
+	@media screen and (max-width: 992px)
+		width 47%
+		height 475px
+		padding-bottom 55px
+		padding-right 0
+	@media screen and (max-width: 785px)
+		padding-bottom 45px
+	@media screen and (max-width: 700px)
+		padding-bottom 35px
+	@media screen and (max-width: 625px)
+		padding-bottom 20px
+	@media screen and (max-width: 576px)
+		width 100%
+		padding-bottom 80px
+		&:before
+			width 167px
+	@media screen and (max-width: 480px)
+		padding-bottom 65px
+	@media screen and (max-width: 420px)
+		padding-bottom 55px
+	@media screen and (max-width: 340px)
+		padding-bottom 35px
+
+.fx-curr__bitcoin-text
+	width 88%
+	margin 0 auto
+	transform rotate(-8deg) translateX(10px)
+	@media screen and (max-width: 768px)
+		width 92%
+		transform rotate(-8deg) translateX(5px)
+	@media screen and (max-width: 625px)
+		transform rotate(-8deg) translateX(3px)
+
+.fx-curr__dash
+	order 2
+	width 34%
+	height 870px
+	background #ca0432 url(../img/dash_bg.jpg) 50% 50% no-repeat
+	background-size cover
+	padding-top 82px
+	&:before
+		content ''
+		display block
+		width 51%
+		height 311px
+		position absolute
+		bottom 1%
+		right 8%
+		background url(../img/coin_dash.png) no-repeat
+		background-size contain
+	@media screen and (max-width: 1680px)
+		padding-top 65px
+	@media screen and (max-width: 1366px)
+		padding-top 40px
+	@media screen and (max-width: 1280px)
+		padding-top 70px
+	@media screen and (max-width: 992px)
+		padding-top 40px
+		width 50%
+		height 475px
+		&:before
+			background-position-y 100%
+	@media screen and (max-width: 810px)
+		padding-top 27px
+	@media screen and (max-width: 600px)
+		padding-top 23px
+	@media screen and (max-width: 576px)
+		width 100%
+		padding-top 70px
+		&:before
+			width 166px
+			right 4%
+	@media screen and (max-width: 480px)
+		padding-top 50px
+	@media screen and (max-width: 440px)
+		padding-top 30px
+	@media screen and (max-width: 395px)
+		padding-top 10px
+
+.fx-curr__dash-text
+	width 82%
+	margin 0 auto
+	@media screen and (max-width: 698px)
+		width 90%
+	@media screen and (max-width: 576px)
+		width 85%
+		transform translateX(-15px)
+	@media screen and (max-width: 390px)
+		width 76%
+		transform translateX(-20px)
+
+.fx-curr__ripple
+	order 4
+	width 46.5%
+	height 540px
+	background  url(../img/ripple_white.png) 262% 62% no-repeat, #ffcc00 url(../img/ripple_bg_lines.png) 50% 50% no-repeat
+	background-size 97%, cover
+	&:before
+		content ''
+		display block
+		position absolute
+		width 35%
+		height 293px
+		bottom 1%
+		left 1%
+		background url(../img/coin_ripple.png) no-repeat
+		background-size contain
+	@media screen and (max-width: 1930px)
+		background-size 895px, cover
+		background-position 24px -42px, 50% 50%
+	@media screen and (max-width: 1680px)
+		padding-right 6px
+		background-size 980px, cover
+		background-position 24px -84px, 50% 50%
+	@media screen and (max-width: 1366px)
+		&:before
+			background-position-y 100%
+	@media screen and (max-width: 992px)
+		width 100%
+		order 3
+		height 290px
+		background-size 645px, cover
+		background-position 80% -84px, 50% 50%
+		&:before
+			width 24%
+			left 3%
+			background-position-y 89%
+	@media screen and (max-width: 768px)
+		background-size 520px, cover
+		background-position 83% -44px, 50% 50%
+	@media screen and (max-width: 576px)
+		width 100%
+		height 475px
+		background-size 600px, cover
+		background-position 48% 60px, 50% 50%
+		&:before
+			width 159px
+			left 6%
+			background-position-y 0
+			top 1%
+			bottom auto
+	@media screen and (max-width: 440px)
+		background-position 75% 84px, 50% 50%
+
+.fx-curr__ripple-text
+	width 61%
+	transform rotate(-6deg) translate(-5px, -36px)
+	@media screen and (max-width: 1420px)
+		transform rotate(-6deg) translate(-5px, -30px)
+	@media screen and (max-width: 1366px)
+		transform rotate(-6deg) translate(-5px, -25px)
+	@media screen and (max-width: 1280px)
+		transform rotate(-6deg) translate(-5px, -20px)
+		width 62%
+	@media screen and (max-width: 1100px)
+		transform rotate(-6deg) translate(-5px, -20px)
+		width 64%
+	@media screen and (max-width: 992px)
+		transform rotate(-6deg) translate(-85px, -27px)
+		width 58%
+	@media screen and (max-width: 768px)
+		transform rotate(-6deg) translate(-64px, -27px)
+	@media screen and (max-width: 640px)
+		transform rotate(-6deg) translate(-50px, -27px)
+	@media screen and (max-width: 576px)
+		transform rotate(-6deg) translate(-25px, 10px)
+		width 90%
+	@media screen and (max-width: 440px)
+		transform rotate(-6deg) translate(-11px, 35px)
+	@media screen and (max-width: 390px)
+		transform rotate(-6deg) translate(-11px, 30px)
+
+.fx-curr__litecoin
+	order 5
+	width 52%
+	height 540px
+	background #83e10a url(../img/litecoin_bg.jpg) 50% 50% no-repeat
+	background-size cover
+	&:before
+		content ''
+		display block
+		position absolute
+		width 29%
+		height 274px
+		top 7%
+		right 1%
+		background url(../img/coin_litecoin.png) no-repeat
+		background-size contain
+	@media screen and (max-width: 1560px)
+		padding-bottom 25px
+	@media screen and (max-width: 1280px)
+		padding-bottom 60px
+	@media screen and (max-width: 992px)
+		width 47%
+		order 4
+		height 475px
+		padding-bottom 50px
+		&:before
+			width 47%
+			top 3%
+			right auto
+	@media screen and (max-width: 640px)
+		padding-bottom 25px
+	@media screen and (max-width: 583px)
+		padding-bottom 16px
+	@media screen and (max-width: 576px)
+		width 100%
+		padding-bottom 100px
+		&:before
+			width 147px
+			background-position-y 25px
+	@media screen and (max-width: 480px)
+		padding-bottom 80px
+	@media screen and (max-width: 420px)
+		padding-bottom 60px
+
+.fx-curr__litecoin-text
+	width 48%
+	transform translateX(-74px)
+	@media screen and (max-width: 1840px)
+		width 52%
+	@media screen and (max-width: 1690px)
+		width 57%
+	@media screen and (max-width: 1366px)
+		width 65%
+		transform translateX(-65px)
+	@media screen and (max-width: 1280px)
+		width 70%
+		transform translateX(-40px)
+	@media screen and (max-width: 1100px)
+		width 77%
+		transform translateX(-20px)
+	@media screen and (max-width: 992px)
+		width 80%
+		transform translateX(0px)
+	@media screen and (max-width: 576px)
+		width 85%
+		transform translateX(-10px)
+	@media screen and (max-width: 420px)
+		transform translateX(0px)
+
+
+.fx-curr__ethereum
+	order 3
+	width 32%
+	height 870px
+	background #ffde00 url(../img/ethereum_bg.jpg) 50% 50% no-repeat
+	background-size cover
+	padding-bottom 141px
+	&:before
+		content ''
+		display block
+		position absolute
+		width 56%
+		height 318px
+		position absolute
+		top 1%
+		right 1%
+		background url(../img/coin_ethereum.png) no-repeat
+		background-size contain
+	@media screen and (max-width: 1690px)
+		padding-bottom 100px
+	@media screen and (max-width: 1600px)
+		padding-bottom 60px
+	@media screen and (max-width: 1560px)
+		padding-bottom 141px
+	@media screen and (max-width: 1455px)
+		padding-bottom 100px
+	@media screen and (max-width: 1300px)
+		padding-left 5px
+		padding-bottom 77px
+	@media screen and (max-width: 1280px)
+		padding-bottom 130px
+	@media screen and (max-width: 1100px)
+		padding-left 10px
+	@media screen and (max-width: 992px)
+		padding-left 8px
+		width 50%
+		order 5
+		height 475px
+		padding-bottom 50px
+		&:before
+			width 53%
+			right 3%
+	@media screen and (max-width: 720px)
+		padding-bottom 58px
+	@media screen and (max-width: 675px)
+		padding-bottom 37px
+		padding-left 0px
+		background-position-x 20%
+	@media screen and (max-width: 600px)
+		padding-bottom 30px
+		padding-left 5px
+	@media screen and (max-width: 576px)
+		padding-bottom 115px
+		width 100%
+		&:before
+			width 170px
+			right 2%
+	@media screen and (max-width: 540px)
+		padding-bottom 95px
+	@media screen and (max-width: 440px)
+		padding-bottom 72px
+		padding-left 10px
+	@media screen and (max-width: 350px)
+		padding-bottom 59px
+	@media screen and (max-width: 340px)
+		padding-bottom 55px
+	@media screen and (max-width: 333px)
+		padding-bottom 25px
+
+.fx-curr__ethereum-text
+	width 81%
+	margin 0 auto
+	transform rotate(8deg)
+	@media screen and (max-width: 1300px)
+		width 82%
+	@media screen and (max-width: 992px)
+		width 81%
+		transform rotate(8deg) translateX(-20px)
+	@media screen and (max-width: 675px)
+		transform rotate(8deg) translateX(-9px)
+		width 80%
+	@media screen and (max-width: 576px)
+		transform rotate(8deg) translateX(-20px)

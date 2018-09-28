@@ -1,33 +1,94 @@
 <!DOCTYPE html>
-html(lang="en")
-	- const publicPath = process.env.NODE_ENV == 'production' ? '/' : './';
+html(lang="ru")
 	head
-		title 
+		title Самая прибыльная торговля криптовалютой с компанией DAX100 
+		meta(charset='utf-8')
 		meta(name='viewport', content='width=device-width, initial-scale=1, user-scalable=no')
-
-		meta(name='keywords', content='')
-		meta(name='description', content='')
-
-		meta(name='twitter:card', content='summary_large_image')
-		meta(name='twitter:title', content="")
-		meta(name='twitter:description', content='')
-		meta(name='twitter:image', content='')
-		meta(name='twitter:image:alt', content="")
-		meta(property='og:title', content="")
-		meta(property='og:site_name', content='')
-		meta(property='og:url', content='')
-		meta(property='og:description', content="")
+		meta(name='keywords', content='Криптоварюты, торговля, рынок, форекс, прибыль, отзывы, Bitcoin, Dash, Litecoin, Ripple, Ethereum')
+		meta(name='description', content='Торгуй на международных биржах криптовалютой Bitcoin, Dash, Litecoin, Ripple, Ethereum с компанией DAX100, читай отзывы о DAX100')
+		meta(property='vk:image', content=base_path+'public/img/man.png')
+		meta(property='og:image', content=base_path+'public/img/man.png')
+		meta(property='image', content=base_path+'public/img/man.png')
+		meta(property='vk:Description', content='Торгуй на международных биржах криптовалютой Bitcoin, Dash, Litecoin, Ripple, Ethereum с компанией DAX100, читай отзывы о DAX100')
+		meta(property='og:title', content='Самая прибыльная торговля криптовалютой с компанией DAX100 ')
 		meta(property='og:type', content='website')
-		meta(property='og:image', content='')
-
-		link(rel='alternate', hreflang='', href='/')
-		link(rel='image_src', href='')
-		link(rel='shortcut icon', href='')
-		link(rel='apple-touch-icon', sizes='128x128', href='')
-		link(rel='apple-touch-icon-precomposed', sizes='128x128', href='')
+		meta(property='og:url', content='http://currency.dax100.org')
+		meta(property='og:Description', content='Торгуй на международных биржах криптовалютой Bitcoin, Dash, Litecoin, Ripple, Ethereum с компанией DAX100, читай отзывы о DAX100')
+		link(rel='alternate', hreflang='ru', href='/')
+		link(rel='image_src', href='favicon.png')
+		link(rel='shortcut icon', href='favicon.png')
+		link(rel='apple-touch-icon', sizes='128x128', href='favicon.png')
+		link(rel='apple-touch-icon-precomposed', sizes='128x128', href='favicon.png')
 		link(rel='stylesheet', href='https://cdn.report/build/core.min.css')
-		link(rel='stylesheet', href=publicPath+'public/build/build.app.css')
+		link(rel='stylesheet', href='public/build/build.app.css')
+		//-В строке выше после href= стоял base_path+
+		
 	body
-		block content
-		script(src="https://cdn.report/build/core.min.js")
-		script(src=publicPath+"public/build/build.app.js")
+		.container-fluid
+			.row
+				block content
+
+		script(src="https://cdn.report/build/build.registration.js")
+		script(src='public/build/build.app.js')
+		//-В строке выше после href= стоял base_path+
+		
+		script(src="//api.venyoo.ru/wnew.js?wc=venyoo/default/science&widget_id=4837297711349760")
+		script(async='', src='https://www.googletagmanager.com/gtag/js?id=UA-106745067-7')
+		script.
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'UA-106745067-7');
+		script.
+			(function() {window.kdmEventData = {context: "prelanding", loc: document.location.href, param: "an"};  
+				var kdm = document.createElement('script');
+				kdm.type = 'text/javascript'; kdm.async = true;
+				kdm.src = "//vogo-vogo.ru/analytics.min.js";
+				var s = document.getElementsByTagName('script')[0];
+				s.parentNode.insertBefore(kdm, s);
+			})();
+		script(type="application/ld+json").
+			{
+				"@context": "http://schema.org",
+				"@type": "Organization",
+				"url": "http://currency.dax100.org",
+				"logo": "http://currency.dax100.org/public/img/public/man.png",
+				"email": "support@dax100.org",
+				"address" : [{
+					"@type": "PostalAddress",
+					"streetAddress": "Hobusepea tn 10-2 Kesklinna district",
+					"addressLocality": "Tallin",
+					"addressRegion": "EE",
+					"postalCode": 10133
+				}],
+				"contactPoint": [{
+					"@type": "ContactPoint",
+					"url": "http://currency.dax100.org",
+					"telephone": "+3728801048",
+					"contactType": "technical support",
+					"contactOption": "TollFree",
+					"areaServed": [
+						"EU",
+						"RU"
+					],
+					"availableLanguage": [
+						"English",
+						"Russian"
+					]
+				},
+				{
+					"@type" : "ContactPoint",
+					"url": "http://currency.dax100.org",
+					"telephone" : "+3728801049",
+					"contactType" : "bill payment",
+					"contactOption" : "TollFree",
+					"areaServed" : ["EU","RU"]
+				}],
+				"sameAs": [
+					"https://www.facebook.com/dax100/",
+					"https://twitter.com/Dax100Group",
+					"https://plus.google.com/u/0/communities/116465928500425998023",
+					"https://www.linkedin.com/company/16184558/",
+					"https://www.instagram.com/dax100company/"
+				]
+			}

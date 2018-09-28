@@ -1,0 +1,236 @@
+﻿.fx-header__reg-section-inner
+	width 480px
+	margin 0 auto
+	@media screen and (max-width: 1680px)
+		padding-bottom 50px
+	@media screen and (max-width: 1560px)
+		width 465px
+	@media screen and (max-width: 1300px)
+		width 390px
+	@media screen and (max-width: 1100px)
+		width 360px
+	@media screen and (max-width: 992px)
+		padding-bottom 25px
+		width 313px
+	@media screen and (max-width: 768px)
+		padding-bottom 0
+		width 300px
+	@media screen and (max-width: 640px)
+		width 256px
+	@media screen and (max-width: 610px)
+		margin initial
+	@media screen and (max-width: 576px)
+		width 415px
+		margin 0 auto
+	@media screen and (max-width: 440px)
+		width 94%
+
+.fx-header__insurance
+	@media screen and (max-width: 1560px)
+		margin-bottom 35px
+	@media screen and (max-width: 992px)
+		margin-bottom 28px
+	@media screen and (max-width: 576px)
+		margin-bottom 6px
+
+.fx-header__insurance-text
+	font-size 36px
+	line-height 50px
+	color #fff
+	text-transform uppercase
+	text-shadow 2px 2px 1px #000, -2px -2px 1px #000, -3px 3px 1px #000, 3px -3px 1px #000
+	@media screen and (max-width: 1300px)
+		font-size 32px
+		line-height 45px
+		letter-spacing 3px
+	@media screen and (max-width: 1100px)
+		font-size 32px
+		letter-spacing 1.5px
+	@media screen and (max-width: 992px)
+		font-size 26px
+		line-height 42px
+		text-shadow 2px 2px 1px #000, -1px -2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000
+	@media screen and (max-width: 768px)
+		font-size 20px
+		letter-spacing 2px
+		line-height 30px
+	@media screen and (max-width: 576px)
+		width 310px
+		margin-left auto
+		margin-right auto
+	@media screen and (max-width: 480px)
+		width 100%
+
+.text-yellow
+	color #ffd601
+
+.fx-header__form-part
+	border 5px solid #000
+	background #fff
+	@media screen and (max-width: 1300px)
+		padding-top 35px
+	@media screen and (max-width: 992px)
+		padding-top 30px
+		border 2px solid #000
+	@media screen and (max-width: 768px)
+		padding-top 21px
+	@media screen and (max-width: 576px)
+		padding-top 31px
+
+.fx-header__form-head
+	@media screen and (max-width: 1560px)
+		margin-bottom 50px
+	@media screen and (max-width: 1300px)
+		margin-bottom 35px
+	@media screen and (max-width: 992px)
+		margin-bottom 30px
+	@media screen and (max-width: 576px)
+		margin-bottom 34px
+
+.fx-header__logo
+	width 220px
+	@media screen and (max-width: 1300px)
+		width 180px
+	@media screen and (max-width: 1100px)
+		width 150px
+	@media screen and (max-width: 992px)
+		width 130px
+
+.fx-form
+	width 72%
+	margin 0 auto
+	@media screen and (max-width: 992px)
+		width 74%
+	@media screen and (max-width: 640px)
+		width 80%
+	@media screen and (max-width: 480px)
+		width 77%
+
+.fx-form__input:not([type=checkbox]):not([type=radio]):not([type=submit])
+	border-bottom 2px solid #f89f05 !important
+	font-family LatoLight !important
+	font-size 18px !important
+	padding 5px 11px !important
+	color #aaa !important
+	-webkit-appearance none
+	-webkit-border-radius 0
+	&:focus::-webkit-input-placeholder
+		color #ece9e9
+	@media screen and (max-width: 1300px)
+		margin-bottom 25px
+	@media screen and (max-width: 992px)
+		border-bottom 1px solid #f89f05 !important
+		padding 0 3px !important
+		font-size 16px !important
+		margin-bottom 30px
+	@media screen and (max-width: 768px)
+		margin-bottom 22px
+	@media screen and (max-width: 576px)
+		margin-bottom 25px
+
+.fx-form__input-last
+	@media screen and (max-width: 992px)
+		margin-bottom 12px
+
+.fx-form ::-webkit-input-placeholder
+	font-family LatoLight
+	font-size 18px
+	line-height 52.62px
+	letter-spacing 0
+	color #aaa
+	@media screen and (max-width: 1300px)
+		font-size 16px
+		line-height 32px
+		letter-spacing .96px
+
+.fx-btn__wrap
+	width 100%
+	height 110px
+	background url(../img/btn_yellow_bg.png) 50% 50% no-repeat
+	background-size contain
+	bottom -61px
+	@media screen and (max-width: 1300px)
+		width 96%
+		height 90px
+		bottom -45px
+	@media screen and (max-width: 1100px)
+		width 94%
+		bottom -37px
+		height 80px
+	@media screen and (max-width: 992px)
+		width 90%
+		height 65px
+		bottom -32px
+	@media screen and (max-width: 640px)
+		width 100%
+	@media screen and (max-width: 576px)
+		height 60px
+		margin 0 auto
+		width 92%
+		bottom -34px
+
+.fx-preloading
+	width 100px
+	display none
+	position absolute
+	left 50%
+	margin-left -50px
+	animation-duration 1s
+	animation-name scale
+	animation-iteration-count infinite
+	@media screen and (max-width: 992px)
+		width 70px
+		margin-left -35px
+
+@keyframes scale
+	0%
+		transform scale(1)
+	50%
+		transform scale(1.1)
+	100%
+		transform scale(1)
+
+.fx-form__btn
+	font-size 22px
+	line-height 60px
+	letter-spacing .25px
+	text-transform uppercase
+	color #fff
+	cursor pointer
+	width 81%
+	height 87px
+	left 4px
+	bottom 3px
+	background url(../img/btn_red_bg.png) 50% 50% no-repeat
+	background-size contain
+	&:hover
+		animation shake 120ms linear
+		animation-iteration-count 3
+	@media screen and (max-width: 1300px)
+		font-size 18px
+		width 78%
+		height 93px
+		bottom 13px
+	@media screen and (max-width: 1100px)
+		font-size 16px
+		height 80px
+		bottom 11px
+		padding-top 5px
+	@media screen and (max-width: 992px)
+		width 80%
+		font-size 13.5px
+		line-height 36px
+		letter-spacing .08px
+		height 59px
+		padding-top 6px
+		bottom 5px
+	@media screen and (max-width: 576px)
+		left 5px
+		bottom 12px
+		height 63px
+
+.shared-process .fx-preloading
+	display block
+
+.shared-process .fx-form__btn
+	display none

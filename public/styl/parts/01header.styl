@@ -1,0 +1,189 @@
+﻿.fx-header
+	height 100vh
+	min-height 972px
+	border-bottom 7px solid #000
+	background #ff8502 url(../img/header.png) no-repeat
+	background-size cover
+	overflow hidden
+	@media screen and (max-width: 1200px)
+		height auto
+	@media screen and (max-width: 992px)
+		min-height 660px
+		border-bottom 4px solid #000
+	@media screen and (max-width: 768px)
+		min-height 560px
+	@media screen and (max-width: 576px)
+		min-height auto
+		height 1000px
+		flex-direction column
+		justify-content flex-end
+
+.fx-header__thought-section
+	width 48%
+	@media screen and (max-width: 1615px) and (max-height: 905px)
+		width 45%
+	@media screen and (max-width: 1300px)
+		width 52%
+	@media screen and (max-width: 1300px) and (max-height: 800px)
+		width 48%
+	@media screen and (max-width: 1270px) and (max-height: 720px)
+		width 48%
+	@media screen and (max-width: 1200px)
+		width 50%
+	@media screen and (max-width: 576px)
+		width 100%
+		border-bottom 4px solid #000
+
+.fx-header__img-man
+	width 88%
+	@media screen and (max-width: 1930px)
+		width initial
+		max-width 100%
+		transform translateY(14px)
+	@media screen and (max-width: 1500px)
+		transform translateY(5px)
+	@media screen and (max-width: 1200px)
+		max-width none
+		width 570px
+	@media screen and (max-width: 992px)
+		width 500px
+	@media screen and (max-width: 910px)
+		width 470px
+	@media screen and (max-width: 768px)
+		width 360px
+	@media screen and (max-width: 640px)
+		width 345px
+	@media screen and (max-width: 576px)
+		width 400px
+		transform translateY(3px)
+	@media screen and (max-width: 520px)
+		width 380px
+	@media screen and (max-width: 440px)
+		width 320px
+
+.fx-header__thought
+	width max-content
+	bottom 67%
+	left 70%
+	@media screen and (max-width: 1930px)
+		width 56%
+		bottom 76%
+		left 36%
+	@media screen and (max-width: 1680px)
+		bottom 70%
+		left 73%
+	@media screen and (max-width: 1615px) and (max-height: 905px)
+		width 57%
+		bottom 79%
+		left 72%
+	@media screen and (max-width: 1600px) and (max-height: 850px)
+		bottom 68%
+		left 72%
+	@media screen and (max-width: 1560px)
+		width 58%
+		bottom 85%
+		left 65%
+	@media screen and (max-width: 1530px) and (max-height: 800px)
+		bottom 77%
+		left 74%
+	@media screen and (max-width: 1500px)
+		bottom 87%
+	@media screen and (max-width: 1366px)
+		width 59%
+		bottom 96%
+		left 47%
+	@media screen and (max-width: 1366px) and (max-height: 800px)
+		width 58%
+		bottom 91%
+		left 54%
+	@media screen and (max-width: 1356px) and (max-height: 800px)
+		bottom 89%
+		left 59%
+	@media screen and (max-width: 1200px)
+		width 320px
+		bottom 95%
+		left 50%
+	@media screen and (max-width: 992px)
+		width 270px
+		bottom 94%
+		left 58%
+	@media screen and (max-width: 910px)
+		width 265px
+		bottom 98%
+		left 41%
+	@media screen and (max-width: 768px)
+		bottom 98%
+		left 27%
+		width 260px
+	@media screen and (max-width: 670px)
+		width 240px
+	@media screen and (max-width: 640px)
+		left 23%
+		bottom 102%
+	@media screen and (max-width: 576px)
+		width 220px
+		left initial
+		right 2%
+		bottom 82%
+	@media screen and (max-width: 520px)
+		bottom 91%
+	@media screen and (max-width: 440px)
+		right 5%
+		bottom 100%
+		width 205px
+
+.fx-header__img-thought
+	max-width 100%
+
+.fx-header__thought-text
+	text-transform uppercase
+	font-size 32px
+	line-height 42px
+	color #000
+	left 51%
+	top 49%
+	transform translate(-50%, -50%)
+	@media screen and (max-width: 1680px)
+		font-size 30px
+		font-size 28px
+		letter-spacing 3px
+		line-height 40px
+	@media screen and (max-width: 1585px) and (max-height: 850px)
+		letter-spacing 2px
+	@media screen and (max-width: 1500px)
+		font-size 26px
+		line-height 38px
+	@media screen and (max-width: 1400px)
+		font-size 24px
+		line-height 36px
+	@media screen and (max-width: 1200px)
+		font-size 22px
+		line-height 34px
+		letter-spacing 1.8px
+	@media screen and (max-width: 1100px)
+		letter-spacing 1.5px
+	@media screen and (max-width: 992px)
+		font-size 18px
+		line-height 24px
+	@media screen and (max-width: 768px)
+		font-size 16px
+		line-height 21.5px
+	@media screen and (max-width: 576px)
+		font-size 12.7px
+		line-height 17px
+
+.fx-header__reg-section
+	width 45%
+	height 100%
+	@media screen and (max-width: 1200px)
+		align-self center
+	@media screen and (max-width: 768px)
+		width 49%
+	@media screen and (max-width: 640px)
+		width 46%
+	@media screen and (max-width: 576px)
+		padding-bottom 50px
+		width 100%
+		height auto
+		padding-top 18px
+		align-items flex-start

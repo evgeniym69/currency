@@ -1,6 +1,75 @@
-extends layout/layout
-
+extends layout/layout.pug
 block content
-	.container
-		.row
-			img(src=publicPath+"public/img/test_pattern.svg", alt="Test pattern")
+	//-header starts
+	header.fx-header.fl.fl-dir-row.fl-justify-b.fl-align-end
+		.fx-header__thought-section.relative-core
+			img(src="public/img/man.png" alt="Ты до сих пор не заработал на криптовалютах?!").fx-header__img-man
+
+			.fx-header__thought.absolute-core
+				img(src="public/img/thought.png" alt="Ты до сих пор не заработал на криптовалютах?!").fx-header__img-thought
+				p.fx-header__thought-text.text__comic.turn-center.absolute-core а ты
+					br
+					|  заработал
+					br 
+					| на 
+					br 
+					| криптовалютах?!
+
+		.fx-header__reg-section.fl.fl-align-c
+			.fx-header__reg-section-inner
+				.fx-header__insurance.margin-b-45
+					p.fx-header__insurance-text.text__comic.turn-center получи страховку на 
+						span.fx-header__insurance-text.text__comic.text-yellow 500 
+						| евро за регистрацию!
+						
+
+				.fx-header__form-part.padding-t-50
+					.fx-header__form-head.turn-center.margin-b-65
+						a(href="/").inline-block-core
+							img(src="public/img/fx_logo_header.svg" alt="logo FXCOINS").fx-header__logo
+					form.fx-registration-form.fx-form.relative-core
+						input.fx-form__input(type="email" name="email" required placeholder="E-mail").margin-b-30
+						input.fx-form__input(type="tel" name="phone" required placeholder="Номер телефона").margin-b-30
+						input.fx-form__input(type="text" name="first_name" required placeholder="Имя").margin-b-30
+						input.fx-form__input.fx-form__input-last(type="text" name="second_name" required placeholder="Фамилия")
+						input.fx-form__input.registration__time(type="hidden" name="time")
+						input.fx-form__input(type="hidden" name="message" value="true")
+						.fx-btn__wrap.relative-core
+							button.fx-form__btn.margin-auto.block-core.relative-core Начать торговлю
+							//-img(class="dax-preloading" src="public/img/coin_bitcoin.png", alt="")
+	//-header finishes
+
+	//-currencies starts
+	.fx-curr
+		.fx-curr__inner.fl.fl-wrap
+			.fx-curr__bitcoin.fx-curr__item.relative-core.margin-b-30.fl.fl-align-end
+				p.fx-curr__bitcoin-text.text__lato-reg.
+					Две пиццы, #[span.fx-nowrap за которые] #[span.fx-nowrap в 2010] году американец Ласло Хайнекс заплатил #[span.fx-nowrap 10 000 BTC] #[span.fx-nowrap сегодня бы] стоили $98 миллионов. Курс электронной валюты #[span.fx-nowrap за 7 лет] вырос #[span.fx-nowrap с 0.5 цента,] достигнув #[span.fx-nowrap в 2017] исторической отметки #[span.fx-nowrap $20 000.]
+			.fx-curr__dash.fx-curr__item.relative-core.margin-b-30.fl.fl-align-start
+				p.fx-curr__dash-text.text__lato-reg.
+					Главная черта криптовалюты Dash - проведение полностью анонимных транзакций #[span.fx-nowrap и внедрение] криптовалютных транзакций #[span.fx-nowrap в реальную] жизнь. #[span.fx-nowrap В биткоиновых] автоматах Lamassu #[span.fx-nowrap уже можно] снимать токены Dash, #[span.fx-nowrap а автоматы]  #[span.fx-nowrap с газированными] напитками Dash N’Drink принимают эту криптовалюту #[span.fx-nowrap к оплате.] 
+			.fx-curr__ripple.fx-curr__item.relative-core.margin-b-30.fl.fl-justify-end.fl-align-c
+				p.fx-curr__ripple-text.text__lato-reg.
+					Концепция Ripple - создание глобальной системы обмена активами между пользователями. #[span.fx-nowrap Ее создатели] хотят, чтобы #[span.fx-nowrap с помощью] платформы Ripple все жители земного шара #[span.fx-nowrap смогли бы] постоянно передавать друг другу 
+					#[span.fx-nowrap материальные ценности.]
+			.fx-curr__litecoin.fx-curr__item.relative-core.margin-b-30.padding-b-20.fl.fl-align-end.fl-justify-c
+				p.fx-curr__litecoin-text.text__lato-reg.
+					Биржи начали торги Litecoin #[span.fx-nowrap в июле] 2012 года, #[span.fx-nowrap а стоимость] криптовалюты составляла всего #[span.fx-nowrap 10 центов.] Но, уже #[span.fx-nowrap в марте] 2013 цена Litecoin резко подскочила #[span.fx-nowrap до $4,] #[span.fx-nowrap а в ноябре] стоимость достигла $48. После того, как валюта прошла обновление SegWit, цена 
+					#[span.fx-nowrap достигла $100.]
+			.fx-curr__ethereum.fx-curr__item.relative-core.margin-b-30.fl.fl-align-end
+				p.fx-curr__ethereum-text.text__lato-reg.
+					Ethereum - цифровая валюта, которая дает возможность регистрации сделок #[span.fx-nowrap с любыми] активами #[span.fx-nowrap на основе] #[span.fx-nowrap смарт-контрактов,] #[span.fx-nowrap не прибегая] #[span.fx-nowrap к традиционным] юридическим процедурам. #[span.fx-nowrap Об интересе] #[span.fx-nowrap к платформе] заявили различные организации, включая Microsoft, IBM #[span.fx-nowrap и JPMorgan Chase.]
+	//-currencies finishes
+
+	//-chance starts
+	.fx-chance
+		.fx-chance__inner.turn-center.margin-auto
+			p.fx-chance__chance.text__comic.margin-b-75 не упусти свой шанс!
+			p.fx-chance__strategy.text__comic.turn-center Получи 7 стратегий заработка на криптовалютах
+			.fx-btn__wrap.fx-chance__btn-wrap.relative-core
+				button.fx-form__btn.fx-chance__btn.relative-core Начать торговлю
+	//-chance finishes
+	
+	//-footer starts
+	include ./include/footer.pug
+	//-footer finishes
