@@ -1,7 +1,8 @@
 ﻿.fx-footer__bg
-	padding 58px 0 63px
+	padding-top 35px
+	padding-bottom 25px
 	@media screen and (max-width: 992px)
-		padding 40px 0 0
+		padding 20px 0 0
 	@media screen and (max-width: 576px)
 		padding 11px 0 0
 
@@ -16,6 +17,7 @@
 		flex-direction column-reverse*/
 
 .fx-footer__warning-part
+	margin-top 45px
 	@media screen and (max-width: 1560px)
 		padding-right 50px
 	@media screen and (max-width: 1366px)
@@ -25,9 +27,8 @@
 		background #fff
 		border-top 4px solid #000
 		padding 15px 0
-		margin-top 67px
-	@media screen and (max-width: 576px)
-		margin-top 36px
+		margin-top 30px
+
 
 .fx-footer__warning-text
 	@media screen and (max-width: 992px)
@@ -62,16 +63,12 @@
 	//width 100%
 	padding-top 13px
 	@media screen and (max-width: 1366px)
-		text-align left
 		//width 310px
 	@media screen and (max-width: 992px)
 		//width 280px
 		padding-top 6px//22px
-		text-align right
 	@media screen and (max-width: 576px)
 		margin-bottom 12px
-		width min-content
-		text-align left
 
 .fx-footer__contacts-item
 	font-family LatoReg
@@ -80,7 +77,6 @@
 	letter-spacing 2px
 	color #000
 	padding-left 50px
-	margin-bottom 7px
 	transition .2s
 	&:before
 		content ''
@@ -117,8 +113,7 @@
 		background-size contain
 	@media screen and (max-width: 1366px)
 		margin-right 0
-	@media screen and (max-width: 992px)
-		margin-right 22px
+	//@media screen and (max-width: 992px)
 	@media screen and (max-width: 576px)
 		margin-right 0
 
@@ -130,39 +125,44 @@
 .fx-footer__logo
 //	width 113px
 	@media screen and (max-width: 992px)
-		width 98px
-
-/*.fx-footer-top-social__item
-  display inline-block
-  height 23px
-  width 8%
+		width 170px
 
 .fx-footer__social-item
-	width 30px
+	width 65px
 	height 30px
-	margin-left 22px
+	margin-top 30px
 	transition .2s
 	@media screen and (max-width: 992px)
-		width 35px
-		height 35px
-		margin-left 28px
-
-
-.fx-footer__social-item-fb
-  background url("../../img/fb.svg") no-repeat center
+		width 60px
+		height 30px
+		margin-top 20px
 
 .fx-footer__social-item-vk
-  background url("../../img/vk.svg") no-repeat center
-
-.fx-footer__social-item-instagram
-  background url("../../img/inst.svg") no-repeat center
+	background url(../img/social/vk.svg) no-repeat center
+	&:hover
+		background url(../img/social/vk_hover.svg) no-repeat center
 
 .fx-footer__social-item-ok
-  background url("../../img/ok.svg") no-repeat center
+	background url(../img/social/ok.svg) no-repeat 50% 50%
+	&:hover
+		background url(../img/social/ok_hover.svg) no-repeat 50% 50%
 
-.fx-footer__social-item-yt
-  background url("../../img/yt.svg") no-repeat center
+.fx-footer__social-item-fb
+	background url(../img/social/fb.svg) no-repeat center
+	&:hover
+		background url(../img/social/fb_hover.svg) no-repeat center
 
 .fx-footer__social-item-gplus
-  background url("../../img/gplus.svg") no-repeat center
-*/
+	background url(../img/social/gplus.svg) no-repeat center
+	&:hover
+		background url(../img/social/gplus_hover.svg) no-repeat center
+
+.fx-footer__social-item-instagram
+	background url(../img/social/inst.svg) no-repeat center
+	&:hover
+		background url(../img/social/inst_hover.svg) no-repeat center
+
+.fx-footer__social-item-yt
+	background url(../img/social/yt.svg) no-repeat center
+	&:hover
+		background url(../img/social/yt_hover.svg) no-repeat center
