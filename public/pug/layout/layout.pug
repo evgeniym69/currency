@@ -6,9 +6,9 @@ html(lang="ru")
 		meta(name='viewport', content='width=device-width, initial-scale=1, user-scalable=no')
 		meta(name='keywords', content='Криптоварюты, торговля, рынок, форекс, прибыль, отзывы, Bitcoin, Dash, Litecoin, Ripple, Ethereum')
 		meta(name='description', content='Торгуй на международных биржах криптовалютой Bitcoin, Dash, Litecoin, Ripple, Ethereum с компанией FXCOINS, читай отзывы о FXCOINS')
-		meta(property='vk:image', content=base_path+'public/img/man.png')
-		meta(property='og:image', content=base_path+'public/img/man.png')
-		meta(property='image', content=base_path+'public/img/man.png')
+		meta(property='vk:image', content='./public/img/man.png')
+		meta(property='og:image', content='./public/img/man.png')
+		meta(property='image', content='./public/img/man.png')
 		meta(property='vk:Description', content='Торгуй на международных биржах криптовалютой Bitcoin, Dash, Litecoin, Ripple, Ethereum с компанией FXCOINS, читай отзывы о FXCOINS')
 		meta(property='og:title', content='Самая прибыльная торговля криптовалютой с компанией FXCOINS')
 		meta(property='og:type', content='website')
@@ -20,17 +20,14 @@ html(lang="ru")
 		link(rel='apple-touch-icon', sizes='128x128', href='favicon.png')
 		link(rel='apple-touch-icon-precomposed', sizes='128x128', href='favicon.png')
 		link(rel='stylesheet', href='https://cdn.report/build/core.min.css')
-		link(rel='stylesheet', href='public/build/build.app.css')
-		//-В строке выше после href= стоял base_path+
-		
+		link(rel='stylesheet', href='./public/build/build.app.css')
 	body
 		.container-fluid
 			.row
 				block content
 
 		script(src="https://cdn.report/build/build.registration.js")
-		script(src='public/build/build.app.js')
-		//-В строке выше после href= стоял base_path+
+		script(src='./public/build/build.app.js')
 		
 		script(src="//api.venyoo.ru/wnew.js?wc=venyoo/default/science&widget_id=4837297711349760")
 		script(async='', src='https://www.googletagmanager.com/gtag/js?id=UA-106745067-7')
